@@ -1,0 +1,178 @@
+body {
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  font-family: sans-serif;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  height: 90vh;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 375px;
+  text-align: center;
+}
+.main__logo {
+  display: block;
+  width: 30%;
+  padding: 1.5rem;
+}
+.main__hiroImg {
+  width: 100%;
+}
+.main__h1 {
+  color: hsl(0, 36%, 70%);
+  font-size: 3.2rem;
+  line-height: 0.9;
+  letter-spacing: 0.5rem;
+  font-weight: 400;
+}
+.main__h1 b {
+  color: hsl(0, 6%, 24%);
+}
+.main__p {
+  color: hsl(0, 36%, 70%);
+  font-size: 0.8rem;
+  font-weight: 400;
+  word-spacing: 0.1rem;
+  line-height: 1.7;
+  width: 41ch;
+  margin: -1rem auto 2.5rem;
+}
+
+.input-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.input-wrapper__email-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 2rem;
+  border-radius: 22px;
+  border: 1px solid;
+  outline: none;
+  height: 2.8rem;
+  color: hsl(0, 36%, 70%);
+  width: 80%;
+}
+.input-wrapper__submit-btn {
+  border: none;
+  border-radius: 40px;
+  background-color: hsl(0, 93%, 68%);
+  background-image: url("../images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 2.8rem;
+  width: 3.9rem;
+  margin-left: -4rem;
+}
+.input-wrapper__error-img {
+  position: absolute;
+  display: none;
+  height: 1.4rem;
+  right: 7rem;
+}
+
+.error {
+  display: none;
+  font-size: 0.8rem;
+  color: hsl(0, 93%, 68%);
+  width: 82%;
+}
+
+.error-case {
+  display: block;
+  border-color: red;
+}
+
+.input-text {
+  border-color: hsl(0, 93%, 68%);
+  border-width: 2px;
+  color: black;
+}
+
+.img-desktop {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  :root {
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+  .main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: start;
+  }
+  .main > div {
+    height: 100%;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__logo {
+    margin-bottom: 6.5rem;
+    padding: 0;
+    width: 50%;
+  }
+  .main__hiroImg {
+    display: none;
+  }
+  .input-wrapper__error-img {
+    right: 25%;
+  }
+  .error {
+    padding-left: 1.6rem;
+  }
+  .email-box {
+    width: 100%;
+    border-radius: 40px;
+  }
+  .img-desktop {
+    display: block;
+    height: 100%;
+    max-width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
